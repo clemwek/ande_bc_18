@@ -13,3 +13,15 @@ class TestWallet(unittest.TestCase):
 
     def test_deposit_works(self):
         """ Checks that deposit adds money to wallet """
+        self.wallet.balance = 0
+        self.assertEqual(self.wallet.deposit(1000), 1000)
+        self.assertEqual(self.wallet.deposit(500), 1500)
+    
+    def test_deposit_amount_Is_addable(self):
+        self.assertEqual(self.wallet.deposit('test'), 'amount must be number!')
+# Test the type of input
+
+
+
+if __name__ == '__main__':
+    unittest.main()
