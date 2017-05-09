@@ -11,16 +11,16 @@ am using Sieve of Eratosthenes formula---where you go through odd numbers and ru
 """
 
 
-def gen_prime(n):
+def gen_prime(upper_limit):
     try:
-        n = int(n)
-        if n >= 2:
+        upper_limit = int(upper_limit)
+        if upper_limit >= 2:
             not_prime = []
             prime = []
-            for i in range(2, n + 1):
+            for i in range(2, upper_limit + 1):
                 if i not in not_prime:
                     prime.append(i)
-                    for j in range(i * i, n + 1, i):
+                    for j in range(i * i, upper_limit + 1, i):
                         not_prime.append(j)
             return prime
         else:
