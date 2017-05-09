@@ -17,7 +17,6 @@ class Car(object):
         else:
             self.num_of_wheels = 4
 
-
     def is_saloon(self):
         if self.car_type == 'saloon':
             return True
