@@ -24,7 +24,9 @@ def gen_prime(n):
 		else :
 			return "prime numbers are positive and greater than one!"
 
-	except Exception as e:
+	except ValueError:
+		return 'Wrong entry'
+	except TypeError:
 		return 'Wrong entry'
 		
 if __name__ == "__main__":
