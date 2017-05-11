@@ -22,6 +22,11 @@ class SavingsAccount(BankAccount):
         self.balance = 500
 
     def deposit(self, amount):
+        """
+        enables deposits to the account 
+        :param amount: int
+        :return: balance int
+        """
         if amount < 0:
             raise RuntimeError('Invalid deposit amount.')
         else:
@@ -29,6 +34,11 @@ class SavingsAccount(BankAccount):
             return self.balance
 
     def withdraw(self, amount):
+        """
+        this enables withdrawing from account
+        :param amount: int
+        :return: int
+        """
         if amount < 0:
             raise RuntimeError('Invalid deposit amount.')
         else:
@@ -46,6 +56,11 @@ class CurrentAccount(BankAccount):
         self.balance = 0
 
     def deposit(self, amount):
+        """
+        deposit for current account
+        :param amount: int
+        :return: int
+        """
         if amount < 0:
             raise RuntimeError('Invalid deposit amount.')
         else:
@@ -53,6 +68,11 @@ class CurrentAccount(BankAccount):
         return self.balance
 
     def withdraw(self, amount):
+        """
+        withdraw for current account
+        :param amount: int
+        :return: int
+        """
         if amount < 0:
             raise RuntimeError('Invalid deposit amount.')
         else:

@@ -1,4 +1,10 @@
 def find_missing(list1, list2):
+    """
+    takes in two lists and compares 
+    :param list1: list
+    :param list2: list
+    :return: int
+    """
     if len(list1) == 0 and len(list2) == 0:
         return 0
     elif len(list1) == len(list2):

@@ -1,17 +1,17 @@
-"""
-A function that generates prime numbers
-
-First check if its greater than 2 since 2 is the smallest prime number
-create list to hold the variables
-Then iterate through integers btn 2 and n
-since 2 is the first prime number we add it to the prime list
-the for loop checks if it has divisors less than its square root if it finds its added in not_prime number
-the remaining numbers are primes and are saved in prime list
-am using Sieve of Eratosthenes formula---where you go through odd numbers and ruling out if they have divisors
-"""
-
-
 def gen_prime(upper_limit):
+    """
+    A function that generates prime numbers
+
+    First check if its greater than 2 since 2 is the smallest prime number
+    create list to hold the variables
+    Then iterate through integers btn 2 and n
+    since 2 is the first prime number we add it to the prime list
+    the for loop checks if it has divisors less than its square root if it finds its added in not_prime number
+    the remaining numbers are primes and are saved in prime list
+    am using Sieve of Eratosthenes formula---where you go through odd numbers and ruling out if they have divisors
+    :param upper_limit:  int
+    :return: list of prime numbers
+    """
     try:
         upper_limit = int(upper_limit)
         if upper_limit >= 2:

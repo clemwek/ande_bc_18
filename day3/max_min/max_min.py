@@ -1,4 +1,10 @@
 def find_max_min(list_in):
+    """
+    Takes in a list and returns a list of maximum and minimum 
+    elements
+    :param list_in: list of int
+    :return: list of max and min or length else returns error
+    """
     try:
         max_item = max(list_in)
         min_item = min(list_in)
@@ -6,5 +12,5 @@ def find_max_min(list_in):
             return [min_item, max_item]
         else:
             return [max_item]
-    except Exception:
-        return 'invalid'
+    except Exception as e:
+        return e

@@ -1,11 +1,17 @@
 """word count"""
 
 
-# recieve the text
+# receive the text
 # split to words and save in a list
-# loop thro the list conting and saving the out
+# loop through the list counting and saving the out
 
 def words(in_words):
+    """
+    Takes in a string of characters splits it to words and returns a dictionary
+    of the words and the number the word occurs
+    :param in_words: list
+    :return: dictionary
+    """
     try:
         in_words = in_words.split()
         dic_out = {}

@@ -2,7 +2,15 @@
 
 
 class BinarySearch(list):
+    """
+    Binary search class
+    """
     def __init__(self, a, b):
+        """
+        sets up the class when its created
+        :param a: int
+        :param b: int
+        """
         data = [b]
         list_len = 1
         while list_len < a:
@@ -12,6 +20,11 @@ class BinarySearch(list):
         self.length = len(data)
 
     def search(self, number):
+        """
+        take in an argument and searches through the list
+        :param number: int
+        :return: dictionary
+        """
         count = 0
         first = 0
         self.length = len(self)

@@ -29,6 +29,12 @@ a {
     font-size: 12px;
 }
 
+.signin-button {
+    background: #4285f4;
+    border: none;
+    padding: 10px;
+}
+
 .center-box {
     margin: 0;
     position: absolute;

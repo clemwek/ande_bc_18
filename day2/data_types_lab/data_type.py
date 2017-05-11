@@ -1,4 +1,11 @@
 def data_type(arg):
+    """
+    This function take one argument. Compare 
+    and return results, based on the 
+    argument supplied to the function
+    :param arg: any data type
+    :return: vary depending on the input
+    """
     try:
         if arg is None:
             return 'no value'
