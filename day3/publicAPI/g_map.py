@@ -8,6 +8,9 @@ class Menu(object):
         self.country = 'Kenya'
 
     def run_menu(self):
+        print('--------------------------------------------------------')
+        print('-------------welcome to these weather app---------------')
+        print('--------------------------------------------------------')
         self.city = input("Please enter city name: ")
         self.country = input("Please enter country name: ")
 
@@ -19,7 +22,12 @@ class Menu(object):
         response = requests.get(query_link)
         weather_data = response.json()
 
+        print('--------------------------------------------------------')
+        print('-------------these are weather app results--------------')
+        print('--------------------------------------------------------')
+
         pprint.pprint(weather_data)
 
-menu = Menu()
-menu.run_menu()
+if __name__ == '__main__':
+    menu = Menu()
+    menu.run_menu()
